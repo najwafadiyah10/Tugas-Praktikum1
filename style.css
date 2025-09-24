@@ -1,0 +1,242 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a2e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+section {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;      /* Tengah horizontal */
+  /* align-items: center;          Tengah vertikal */
+  flex-direction: column;       /* Biar kontennya turun ke bawah */
+  padding: 60px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #04153b;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  height: 90%;
+  justify-content: center;
+}
+
+.hero-left, .hero-right {
+  flex: 1;
+  /* min-width: 300px; */
+  background-color: #04153b;
+  padding: 20px;
+  border-radius: 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #00d4ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  background-color: #fff;
+  color: #1a1a2e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+/* Sosmed Icons */
+.sosmed {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sosmed img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.sosmed img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section */
+/* .about {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  height: 90%;
+  justify-content: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.pendidikan h2 {
+  margin-top: 30px;
+  color: #00d4ff;
+} 
+
+.tentang, .pendidikan {
+  flex: 1;
+  background-color: #04153b;
+  padding: 20px;
+  border-radius: 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.about {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 60px;
+}
+
+.tentang, .pendidikan {
+  flex: 1;
+  background-color: #04153b;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+/* .about p {
+  margin-bottom: 15px;
+} */
+
+.pendidikan h2 {
+  margin-top: 0;
+}
+
+/* Project Section */
+.project {
+  padding: 60px;
+}
+
+.project-kuliah {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.academix, .Puskesmas, .PickCycle {
+  flex: 1;
+  min-width: 300px;
+  background-color: #04153b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project h2 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  .project-kuliah {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
